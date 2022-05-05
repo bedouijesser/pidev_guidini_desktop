@@ -1,2 +1,5 @@
-# desktop-version
-guidini desktop version using javaFX
+# Desktop-version
+
+Guidini desktop version using javaFX  
+
+![screenshot](github/guidini.png)
