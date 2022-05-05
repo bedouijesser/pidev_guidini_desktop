@@ -1,15 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox id="auth-page" alignment="CENTER" spacing="20.0" style="-fx-background-image: url('auth-background.png');" styleClass="auth-page" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.guidini.guidini_dektop.MainController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
 
-    <Label fx:id="welcomeText" />
-    <Button onAction="#onHelloButtonClick" text="Goodbye" />
-</VBox>
+<HBox alignment="CENTER" maxHeight="650.0" maxWidth="1000.0" minHeight="700.0" minWidth="1000.0" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-image: auth-background.png;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TilePane alignment="CENTER" prefColumns="10" prefHeight="700.0" prefRows="10" prefWidth="1000.0" styleClass="main-auth-panel" stylesheets="@hello.css">
+         <children>
+            <SplitPane dividerPositions="0.3957746478873239" prefHeight="360.0" prefWidth="712.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #CC0E00;">
+                     <children>
+                        <ImageView fitHeight="66.0" fitWidth="73.0" layoutX="207.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../Desktop/01.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="38.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G U I D I N I">
+                           <font>
+                              <Font name="Ubuntu Bold" size="32.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="69.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T U N I S I A">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="284.0" prefWidth="382.0">
+                     <children>
+                        <VBox layoutY="-1.0" prefHeight="358.0" prefWidth="426.0" style="-fx-padding: 20px;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Connexion">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue à nouveau,">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="veuillez vous connecter à votre compte." />
+                              <TextField promptText="huest@guidini.tn" VBox.vgrow="NEVER">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField promptText="*******">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="386.0">
+                                 <children>
+                                    <Hyperlink contentDisplay="CENTER" prefHeight="21.0" prefWidth="132.0" text="Mot de passe oublié?">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Hyperlink>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="196.0" spacing="150.0">
+                                 <children>
+                                    <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #FF825A;" text="S'inscrire" textFill="WHITE">
+                                       <padding>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </padding>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #CC0E00;" text="Connecxion" textFill="WHITE">
+                                       <padding>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </padding>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <Line endX="284.29290771484375" endY="-5.798988342285156" startX="-100.0" stroke="#d3d3d3">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Line>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="386.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ou connectez-vous avec" wrappingWidth="293.7197265625">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <Hyperlink id="google-link" maxHeight="38.0" maxWidth="38.0" minHeight="38.0" minWidth="38.0" prefHeight="38.0" prefWidth="38.0">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                    </Hyperlink>
+                                    <Hyperlink id="facebook-link" maxHeight="42.0" maxWidth="42.0" minHeight="42.0" minWidth="42.0" prefHeight="42.0" prefWidth="42.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </TilePane>
+   </children>
+</HBox>
