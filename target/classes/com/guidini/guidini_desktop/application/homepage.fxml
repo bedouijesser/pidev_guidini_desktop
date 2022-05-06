@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" minHeight="750.0" minWidth="1000.0" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/18"
+            fx:controller="com.guidini.guidini_desktop.application.HomepageController">
+    <fx:include fx:id="navbar" source="navbar.fxml"/>
+</AnchorPane>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" maxHeight="650.0" maxWidth="1000.0" minHeight="700.0"
+      minWidth="1000.0"
+      prefHeight="700.0" prefWidth="1000.0" style="-fx-background-image: auth-background.png;"
+      xmlns="http://javafx.com/javafx/18"
+      fx:controller="com.guidini.guidini_desktop.authentication.AuthenticationController">
+    <TilePane alignment="CENTER" prefColumns="10" prefHeight="700.0" prefRows="10" prefWidth="1000.0"
+              styleClass="main-auth-panel" stylesheets="@hello.css">
+        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;">
+            <AnchorPane cache="true" minWidth="731.0" prefHeight="200.0" prefWidth="200.0">
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <VBox alignment="CENTER" minWidth="300.0" prefHeight="361.0" prefWidth="300.0"
+                          style="-fx-background-color: red;">
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="G U I D I N I">
+                            <font>
+                                <Font name="Ubuntu Bold" size="32.0"/>
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="T U N I S I A">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Text>
+                    </VBox>
+                    <VBox prefHeight="358.0" prefWidth="426.0" style="-fx-padding: 20px;">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Connexion">
+                            <VBox.margin>
+                                <Insets bottom="20.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="13.0"/>
+                            </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Bienvenue à nouveau,">
+                            <VBox.margin>
+                                <Insets bottom="5.0"/>
+                            </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Veuillez vous connecter à votre compte."/>
+                        <TextField fx:id="emailField" promptText="guest@guidini.tn"
+                                   VBox.vgrow="NEVER">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="30.0"/>
+                            </VBox.margin>
+                        </TextField>
+                        <Text fx:id="emailFieldErrorText" fill="#f20202" strokeType="OUTSIDE"
+                              strokeWidth="0.0"
+                              text="Veuillez saisir une adresse mail valide (xxx@xxx.xx)">
+                            <font>
+                                <Font name="Roboto" size="10.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets top="8.0"/>
+                            </VBox.margin>
+                        </Text>
+                        <PasswordField fx:id="passwordField" promptText="*******">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </padding>
+                        </PasswordField>
+                        <Text fx:id="passwordFieldErrorText" fill="#ff0808" strokeType="OUTSIDE"
+                              strokeWidth="0.0"
+                              text="La mot de passe doit avoir 8 characteres en minimum">
+                            <font>
+                                <Font name="Roboto" size="10.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </Text>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="196.0"
+                              spacing="109.0">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                            <Button fx:id="submitButton" contentDisplay="CENTER"
+                                    mnemonicParsing="false" onAction="#login"
+                                    prefHeight="36.0" prefWidth="215.0"
+                                    style="-fx-background-color: #CC0E00;" text="Connexion"
+                                    textFill="WHITE">
+                                <padding>
+                                    <Insets bottom="10.0" left="20.0" right="20.0"
+                                            top="10.0"/>
+                                </padding>
+                                <cursor>
+                                    <Cursor fx:constant="HAND"/>
+                                </cursor>
+                                <HBox.margin>
+                                    <Insets bottom="7.0" top="7.0"/>
+                                </HBox.margin>
+                            </Button>
+                            <Hyperlink contentDisplay="CENTER" prefHeight="21.0"
+                                       prefWidth="202.0" text="Mot de passe oublié?">
+                                <font>
+                                    <Font name="System Bold" size="10.0"/>
+                                </font>
+                            </Hyperlink>
+                        </HBox>
+                        <Line endX="284.29290771484375" endY="-5.798988342285156"
+                              startX="-100.0" stroke="#d3d3d3">
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0"/>
+                            </VBox.margin>
+                        </Line>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="386.0">
+                            <Text strokeType="OUTSIDE" strokeWidth="0.0"
+                                  text="Ou connectez-vous avec"
+                                  wrappingWidth="293.7197265625">
+                                <font>
+                                    <Font size="10.0"/>
+                                </font>
+                            </Text>
+                            <Hyperlink id="google-link" maxHeight="38.0" maxWidth="38.0"
+                                       minHeight="38.0" minWidth="38.0" prefHeight="38.0"
+                                       prefWidth="38.0">
+                                <HBox.margin>
+                                    <Insets right="10.0"/>
+                                </HBox.margin>
+                            </Hyperlink>
+                            <Hyperlink id="facebook-link" maxHeight="42.0" maxWidth="42.0"
+                                       minHeight="42.0" minWidth="42.0" prefHeight="42.0"
+                                       prefWidth="42.0"/>
+                        </HBox>
+                    </VBox>
+                </HBox>
+            </AnchorPane>
+        </HBox>
+    </TilePane>
+</HBox>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" minWidth="250.0" prefHeight="750.0" prefWidth="250.0"
+            styleClass="navbar"
+            stylesheets="@navbar.css" xmlns="http://javafx.com/javafx/18"
+            fx:controller="com.guidini.guidini_desktop.application.NavbarController">
+    <VBox prefHeight="750.0" prefWidth="250.0" styleClass="container">
+        <Button fx:id="dashBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="215.0"
+                styleClass="menuItem" text="Dashboard">
+            <VBox.margin>
+                <Insets bottom="5.0" left="15.0" right="15.0" top="15.0"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="tablesBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="215.0"
+                styleClass="menuItem" text="Tables">
+            <VBox.margin>
+                <Insets bottom="5.0" left="15.0" right="15.0" top="15.0"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="commentsBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="215.0"
+                styleClass="menuItem" text="Comments">
+            <VBox.margin>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="usersBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="215.0"
+                styleClass="menuItem" text="Users">
+            <VBox.margin>
+                <Insets bottom="15.0" left="15.0" right="15.0"/>
+            </VBox.margin>
+        </Button>
+        <Label alignment="TOP_LEFT" styleClass="nav-heading" text="Pages">
+            <VBox.margin>
+                <Insets left="25.0"/>
+            </VBox.margin>
+        </Label>
+        <Button fx:id="profileBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="215.0"
+                styleClass="menuItem" text="Profile">
+            <VBox.margin>
+                <Insets bottom="5.0" left="15.0" right="15.0" top="15.0"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="contactBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="215.0"
+                styleClass="menuItem" text="Contact">
+            <VBox.margin>
+                <Insets bottom="5.0" left="15.0" right="15.0" top="15.0"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#logout" prefHeight="40.0" prefWidth="215.0"
+                styleClass="menuItem" text="Log out">
+            <VBox.margin>
+                <Insets bottom="5.0" left="15.0" right="15.0" top="15.0"/>
+            </VBox.margin>
+        </Button>
+    </VBox>
+</AnchorPane>

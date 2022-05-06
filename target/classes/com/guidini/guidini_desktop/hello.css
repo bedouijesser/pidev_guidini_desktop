@@ -1,0 +1,15 @@
+.main-auth-panel {
+     -fx-background-image: url('auth-background.png');
+     -fx-background-size: 100% 100%;
+}
+#facebook-link{
+     -fx-background-image: url('icons8-facebook-48.png');
+     -fx-background-size: 100% 100%;
+}
+#google-link{
+     -fx-background-image: url('icons8-google-48.png');
+     -fx-background-size: 100% 100%;
+}
+.is-loading {
+     -fx-background-color: #F5F5F5 !important;
+}

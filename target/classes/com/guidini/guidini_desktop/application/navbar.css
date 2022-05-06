@@ -1,0 +1,29 @@
+.navbar {
+
+}
+.navbar .container {
+    width: auto;
+    height: auto;
+    -fx-background-color: white;
+}
+.menuItem {
+    -fx-alignment: center-left;
+    -fx-text-fill: #272626;
+    -fx-background-color: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-padding: 10px 15px;
+    -fx-margin: 15 15 5 15;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+.menuItem:hover {
+    -fx-text-fill: #c94040;
+    -fx-background-color: #f6f9ff;
+}
+.nav-heading {
+    -fx-font-size: 10px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #d85959;
+}
