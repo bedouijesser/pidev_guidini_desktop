@@ -6,6 +6,9 @@
     height: auto;
     -fx-background-color: white;
 }
+.navbar .active-menu {
+    -fx-background-color: #f6f9ff;
+}
 .menuItem {
     -fx-alignment: center-left;
     -fx-text-fill: #272626;

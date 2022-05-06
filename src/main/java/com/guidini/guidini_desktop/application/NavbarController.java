@@ -50,7 +50,7 @@ public class NavbarController implements Initializable {
         Map<Button, String> buttonsPathMap = new HashMap<>();
         buttonsPathMap.put(commentsBtn, "comments");
         buttonsPathMap.put(contactBtn, "contact");
-        buttonsPathMap.put(dashBtn, "dashboard");
+        buttonsPathMap.put(dashBtn, "homepage");
         buttonsPathMap.put(profileBtn, "profile");
         buttonsPathMap.put(tablesBtn, "tables");
         buttonsPathMap.put(usersBtn, "users");
